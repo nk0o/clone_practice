@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greating</title>
+    <!-- Meta Tag -->
+    <meta name="author" content="NK0o">
+    <meta name="description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 익스 렌더링과 관련된 코드 -->
+    <!-- Open Graph 태그 : 주로 페이스북 (http://ogp.me/)-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="og:image" content="img/logo__github.png">
+    <meta property="og:url" content="https://github.com">
+    <!-- Twitter Card : 주로 트위터 (https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html)-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GitHub">
+    <meta property="twitter:title" content="Build software better, together">
+    <meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="twitter:image" content="img/logo__github.png">
+    <meta property="twitter:url" content="https://github.com">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> --> <!-- 익스에서는 ico 파일을 사용하는 것이 좋음 : 루트 경로에 ico 있다면 경로 생략가능 이름 유지가 좋음 -->
+    <!-- <link rel="icon" href="favicon.png"> -->
+    <!-- <link rel="apple-touch-icon" href="favicon.png" --> <!-- 스마트폰 파비콘 적용 -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <!-- Script -->    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/script/slick.js"></script>
+    <script type="text/javascript" src="assets/script/slick.min.js"></script>
+    <script type="text/javascript" src="assets/script/main.js"></script>
+</head>
+<body>
+    <div class="body_container">
+        <!-- Header -->
+        <header class="section">
+            <div class="inner">
+                <ul class="sign-group clearfix">
+                   <li><a href="#">로그인</a></li> 
+                   <li><a href="#">회원가입</a></li> 
+                   <li><a href="#">쿠폰/교환권</a></li> 
+                   <li><a href="#">고객센터<i></i></a></li>                    
+                </ul>
+                <div class="logo">
+                    <a href="#">GREATING</a>
+                </div>
+                <div class="menu-group">
+                    <button class="category">
+                        <span class="category__icon">
+                            <span></span> 
+                            <span></span>
+                            <span></span>
+                        </span>
+                        카테고리
+                    </button>
+                    <ul class="main-menu">
+                        <li><a href="#">케어식단</a></li>
+                        <li><a href="#">건강마켓</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                    <div class="search-group">
+                        <form action="POST" id="searchFrom">
+                            <input id="searchInput" type="text" class="input--text" placeholder="검색어를 입력해 주세요.">
+                            <input type="submit" value="submit">
+                        </form>
+                        <div class="cart">장바구니
+                            <span class="cart_count"><span>0</span></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- VISUAL SECTION -->
+        <section id="section--visual" class="section">
+            <div id="visual__slider">
+                <div class="visual__slide">
+                    <div class="inner">
+                        <p class="visual__description">수험생 여러분 수고했어요!</p>
+                        <h3 class="visual__title">새로운 시작을 위한<br>라이트한 식단관리</h3>
+                        <p class="visual__etc">11.12~11.25</p>
+                    </div>
+                </div>
+                <div class="visual__slide">
+                    <div class="inner">
+                        <p class="visual__description">대전 유명 맛집을 우리집으로!</p>
+                        <h3 class="visual__title">[모두의 맛집] 런칭기념<br>10%할인 이벤트</h3>
+                        <p class="visual__etc">11.12~11.25</p>
+                    </div>
+                </div>
+                <div class="visual__slide">
+                    <div class="inner">
+                        <p class="visual__description">집에서 간편하게 만드는</p>
+                        <h3 class="visual__title">따뜻한 겨울<br>최대 30% 할인</h3>
+                        <p class="visual__etc">11.12~11.25</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RECOMMEND SECTION -->
+        <section id="section--recommend" class="section">
+            <div class="inner">
+                <p class="sec__description">건강은 밥상으로부터</p>
+                <h2 class="sec__title">그리팅이 자신있게 추천드려요</h2>
+                <div class="btn-group">
+                    <button class="btn btn--primary">건강반찬</button>
+                    <button class="btn btn--primary">진한 국/찌개</button>
+                    <button class="btn btn--primary">자연 담은 면</button>
+                    <button class="btn btn--primary">영양가득 밥/죽</button>
+                    <button class="btn btn--primary">샐러드/샌드위치</button>
+                    <button class="btn btn--primary">베이커리/스프</button>
+                    <button class="btn btn--primary">착한 간식/음료</button>
+                    <button class="btn btn--primary">안심 키즈</button>
+                    <button class="btn btn--primary">부드러운 연화식</button>
+                    <button class="btn btn--primary">1Table</button>
+                    <button class="btn btn--primary">비건</button>
+                    <button class="btn btn--primary">스페셜 패키지</button>
+                    <button class="btn btn--primary">반찬 정기구독</button>
+                    <button class="btn btn--primary">라이프</button>
+                </div>
+                <ul class="item__list clearfix">
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn__wrap">
+                    <button class="btn btn--viewMore">자연 담은 면 전체보기<i></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- BNR-1 SECTION -->
+        <section id="section--bnr_1" class="section">
+            <div class="bnr__slider">
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">그리팅 카톡 채널 추가하고</div>
+                        <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
+                    </div>
+                </a>
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">역대급 혜택! 최대 10만원 쿠폰팩!</div>
+                        <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
+                    </div>
+                </a>
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">신한카드 마이샵 혜택 OPEN</div>
+                        <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
+                    </div>
+                </a>
+            </div>            
+        </section>
+        <!-- SUBSCRIPTION SECTION -->
+        <section id="section--subscription" class="section">
+            <div class="inner">
+                <p class="sec__description">꾸준한 관리, 더이상 어렵지 않아요</p>
+                <h2 class="sec__title">케어식단 정기구독</h2>
+                <ul class="item__list clearfix">
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/subscript_01.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">세계 블루존 식사법</p>
+                            <h4  class="item__title">장수마을식단</h4>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/subscript_02.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">당질 제한 레시피</p>
+                            <h4  class="item__title">저당식단</h4>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/subscript_03.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">유지어터를 위한</p>
+                            <h4  class="item__title">칼로리식단</h4>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/subscript_04.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">나만의 맞춤 건강식</p>
+                            <h4  class="item__title">My그리팅식단</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- CHALLENGE SECTION -->
+        <section id="section--challenge" class="section">
+            <div class="inner">
+                <p class="sec__description">건강한 라이프 스타일의 시작</p>
+                <h2 class="sec__title">6일 완성 챌린지 식단</h2>
+                <ul class="item__list clearfix">
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">시간이 없다 싶을 때</p>
+                            <h4  class="item__title">BEAUTY FIT</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted">30,000원 (6팩)</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">시간이 없다 싶을 때</p>
+                            <h4  class="item__title">BEAUTY FIT</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted">30,000원 (6팩)</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">시간이 없다 싶을 때</p>
+                            <h4  class="item__title">BEAUTY FIT</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted">30,000원 (6팩)</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">시간이 없다 싶을 때</p>
+                            <h4  class="item__title">BEAUTY FIT</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted">30,000원 (6팩)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- BNR-2 SECTION -->
+        <section id="section--bnr_2" class="section">
+            <div class="bnr__slider">
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">현대카드 M포인트 30% 사용</div>
+                        <div class="bnr__description">최대 2만5천 포인트까지!</div>
+                    </div>
+                </a>
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">역대급 혜택! 최대 10만원 쿠폰팩!</div>
+                        <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
+                    </div>
+                </a>
+                <a href="" class="bnr__slide">
+                    <div class="inner">
+                        <div class="bnr__title">신한카드 마이샵 혜택 OPEN</div>
+                        <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
+                    </div>
+                </a>
+            </div>  
+        </section>
+        <!-- BENEFIT SECTION -->
+        <section id="section--benefit" class="section">
+            <div class="inner">
+                <h2 class="sec__title">지금 사면 혜택도, 건강도 득템</h2>
+
+            </div>
+        </section>
+        <!-- NEWITEM SECTION -->
+        <section id="section--newItem" class="section">
+            <div class="inner">
+                <h2 class="sec__title">깐깐하게 엄선한 신상품</h2>
+                <ul class="item__list clearfix">
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                            <span class="item__label">10%<br>쿠폰</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item__thumb">
+                            <img src="assets/img/reco_img_01.jpg" alt>
+                            <span class="item__tag">냉동</span>
+                        </a>
+                        <div class="item__title-group">
+                            <p class="item__description">칼로 깎아만든 명품 도삭면</p>
+                            <h4  class="item__title">우삼겹 짬뽕</h4>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-discounted-rate">20%</span>
+                            <span class="item__price-origin">8,500원</span>
+                            <span class="item__price-discounted">6,800원</span>
+                            <button class="item__cart">장바구니에 추가</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- BRAND SECTION -->
+        <section id="section--brand" class="section">
+            <div class="inner">
+                <h2 class="sec__title">그리팅이 고른 착한 브랜드</h2>
+            </div>
+        </section>
+        <!-- MAGAZINE SECTION -->
+        <section id="section--magazine" class="section">
+            <div class="inner">
+                <h2 class="sec__title">그리팅 매거진</h2>
+            </div>
+            <div id="magazine--slider">
+                <div class="magazine__contents">
+                    <div class="magazine__slide"></div>
+                    <div class="magazine__slide"></div>
+                    <div class="magazine__slide"></div>
+                </div>                
+                <div class="magazine__bg">
+                   <div class="bg__slide"></div>
+                   <div class="bg__slide"></div>
+                   <div class="bg__slide"></div>
+                </div>
+            </div>
+        </section>
+        <!-- TV SECTION -->
+        <section id="section--tv" class="section">
+            <div class="inner clearfix">
+                <div class="tv__title_wrap">
+                    <h2 class="sec__title">
+                        <span class="title_logo"></span>
+                        <a href="#">그리팅TV</a>
+                        <i>자세히 보기</i>
+                    </h2>
+                    <p class="sec__description">자연과 건강을 담은 그리팅 온면</p>
+                    <span>추워진 날씨에 필수!</span>
+                    <button>그리팅 유튜브 채널 구독하기<i></i></button>
+                </div>
+                <a class="tv__img_wrap">
+                    <img src="assets/img/tv_01.jpg" alt="그리팅 온면">
+                </a>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="section">
+            <div class="inner">
+                <ul class="ft_links">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><em>개인정보처리방침</em></a></li>
+                    <li><a href="#">멤버십 프로그램</a></li>
+                </ul>
+                <select name="" id="selectFamilySite">
+                    <option value="현대백화점 관계사">현대백화점 관계사</option>
+                </select>
+                <div class="customer">
+                    <div class="service_center"></div>
+                    <ul class="sns_icons">
+                        <li><a href="#">인스타</a></li>
+                        <li><a href="#">유튜브</a></li>
+                        <li><a href="#">네이버블로그</a></li>
+                        <li><a href="#">카카오톡</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>현대그린푸드</p>
+                    <ul>
+                        <li>대표이사: 박홍진</li>
+                        <li>사업장소재지:경기도 용인시 수지구 문인로 30(동천동) 현대그린푸드</li>
+                    </ul>
+                    <p>Copyright &copy; 2020 HYUNDAI GREEN FOOD. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
