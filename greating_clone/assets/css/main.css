@@ -846,25 +846,103 @@ header .cart .cart_count > span{
     font-size: 20px;
     cursor: pointer;
 }
-/* FOOTER */
-footer {
-    background-color: #f9f9f9;
-    padding: 30px 0 0 ;
+/* BNR-NOTICE SECTION */
+#section--bnr_notice {
+    background-color: #918c00;
 }
-.ft_links {
+#section--bnr_notice .inner {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.notice__title {
+    color: #fff;
+    white-space: nowrap;
+    padding-right: 15px;
+    margin-right: 21px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+.notice__title::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 13px;
+    background-color: #fff;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    border-radius: 1px;
+}
+.notice__slide {
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 0;
+}
+.notice__more {
+    margin-left: auto;
+    transition: all 0.5s;
+}
+.notice__more:hover {
+    transform: rotate(90deg);
+}
+.notice__more .icon-plus {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+.notice__more .icon-plus:after {
+    width: 18px;
+    height: 4px;
+    left: 4px;
+    top: 11px;
+  }
+.notice__more .icon-plus:before {
+    width: 4px;
+    height: 18px;
+    left: 11px;
+    top: 4px;
+  }
+.notice__more .icon-plus:after, 
+.notice__more .icon-plus:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+
+
+/* FOOTER */
+footer.section {
+    background-color: #f9f9f9;
+    padding: 30px 0 70px;
+    margin-top: 0;
+}
+.ft__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.ft__links {
     padding: 14px 0;
 }
-.ft_links li {
+.ft__links li {
     float: left;
-    display: inline-block;
     padding-right: 14px;
     margin-right: 14px;
     border-right: 1px solid #ccc;
 }
-.ft_links li:last-child {
+.ft__links li:last-child {
     border-right: 0;
 }
-.ft_links li em {
+.ft__links li em {
     font-weight: 700;
 }
 #selectFamilySite {
@@ -892,16 +970,39 @@ footer {
     background: #fff url('../img/ico_comm_select-arrow.png') center no-repeat;
 } */
 footer .customer {
-
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 44.5%;
 }
-footer .copyright {
-
+footer .customer__sc {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 22px;
+}
+footer .customer__sc em {
+    display: block;
+    font-size: 28px;
+    color: #918c00;
+    line-height: 1.4;
+}
+footer .customer__sc-info {
+    margin-top: 15px;
+}
+footer .customer__sc-info li em {
+    color: #1c1c1c;
+}
+footer .customer__sc-info li {
+    line-height: 1.75;
+    color: #888;    
+}
+footer .sns_icons {
+    margin-top: 48px;
 }
 footer .sns_icons li {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid red;
     float: left;
     margin-right: 24px;
 }
@@ -916,14 +1017,54 @@ footer .sns_icons li a {
     background: url('../img/sp_ico.png') no-repeat;   
 }
 footer .sns_icons li:nth-child(1) a {
-    background-position: 10px 88px;
+    background-position: 0px -160px;
 }
 footer .sns_icons li:nth-child(2) a{
-    background-position: 50px 88px;
+    background-position: -50px -160px;
 }
 footer .sns_icons li:nth-child(3) a{
-    background-position: 100px 88px;
+    background-position: -100px -160px;
 }
 footer .sns_icons li:nth-child(4) a{
-    background-position: 150px 88px;
+    background-position: -150px -160px;
+}
+footer .copyright {
+    float: left;
+    width: calc(100% - 44.5%);
+}
+footer .copyright p {
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+footer .copyright li {
+    line-height: 1.5;
+    font-size: 15px;
+    color: #888;
+    letter-spacing: -0.03px;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+}
+footer .copyright li:nth-child(2n+1)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 15px;
+    background-color: #888;
+    transform: translateY(-50%);
+}
+footer .copyright li.copyright__phrase {
+    margin: 10px 0;
+}
+footer .copyright li.copyright__link {
+    color: #1c1c1c;
+    margin: 10px 0;
+}
+footer .copyright li.copyright__reserved {
+    
 }

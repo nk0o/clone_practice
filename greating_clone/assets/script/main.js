@@ -34,6 +34,14 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear',
     });
-
+    $('#notice__slider').slick({
+        vertical: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        verticalSwiping: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
 
   });
