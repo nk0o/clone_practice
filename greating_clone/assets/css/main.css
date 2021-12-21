@@ -71,6 +71,56 @@ body, html, * {
     box-sizing:border-box;
     position: relative; /* inner에서 걸릴 수 있도록 꼭 추가하기  */
 }
+/* Slick Arrow */
+.slick-arrow {
+    width: 55px;
+    height: 55px;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border:0;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    transform:translate(0, -50%);
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+}
+.slick-arrow.slick-prev::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    margin: 19px 0 0 21px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: solid #fff;
+    border-width: 3px 3px 0 0;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+}
+.slick-arrow.slick-next::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    margin: 19px 0 0 16px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: solid #fff;
+    border-width: 3px 3px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+}
+.slick-arrow.slick-prev{left:0;}
+.slick-arrow.slick-next{right:0;}
 /* 아이템 리스트 */
 .item__list {
     margin-top: -10px;
@@ -227,7 +277,7 @@ header .sign-group li a {
     vertical-align: middle;
     font-size: 13px;
     line-height: 15px;
-}
+} 
 header .logo {
     background: url('../img/img_header_logo.png') center no-repeat;
     text-indent: -9999px;
@@ -363,59 +413,6 @@ header .cart .cart_count > span{
     overflow: hidden;
     margin-top: 0;
 }
-#visual__slider .slick-arrow {
-    width: 55px;
-    height: 55px;
-    background-color:rgba(0, 0, 0, 0.3);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    border:0;
-    text-indent: -9999px;
-    position: absolute;
-    top: 50%;
-    transform:translate(0, -50%);
-    z-index: 1;
-    cursor: pointer;
-    outline: none;
-}
-#visual__slider .slick-arrow.slick-prev::after {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    margin: 19px 0 0 21px;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-    border: solid #fff;
-    border-width: 3px 3px 0 0;
-    -webkit-transform: rotate(225deg);
-    transform: rotate(225deg);
-    transition: all 0.5s;
-    top: 0;
-    left: 0;
-}
-#visual__slider .slick-arrow.slick-next::after {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    margin: 19px 0 0 16px;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-    border: solid #fff;
-    border-width: 3px 3px 0 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    transition: all 0.5s;
-    top: 0;
-    left: 0;
-}
-#visual__slider .slick-arrow.slick-prev {
-    left: 11.8%;
-}
-#visual__slider .slick-arrow.slick-next {
-    right: 11.8%;  
-}
 #visual__slider .visual__slide {
     display: flex !important;
     align-items: center;
@@ -441,6 +438,12 @@ header .cart .cart_count > span{
 #visual__slider .visual__slide .visual__etc {
     color:#8e8e8e;
     margin-top: 33px;
+}
+#visual__slider .slick-arrow.slick-prev {
+    left: 11.8%;
+}
+#visual__slider .slick-arrow.slick-next {
+    right: 11.8%;  
 }
 
 /* RECOMMEND SECTION */
@@ -673,6 +676,75 @@ header .cart .cart_count > span{
 /* BRAND SECTION */
 /* MAGAZINE SECTION */
 #section--magazine {   
+    overflow:hidden;
+}
+.magazine__contents {
+    background: center no-repeat;
+    background-size: cover;
+    margin-top: 33px;
+    padding: 130px 0 70px;   
+    position: relative;
+    overflow: hidden;
+}
+.magazine__contents.blur::before {
+    background:center no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+}
+#magazine__slider {
+    width: 1030px;
+    margin: 0 auto;
+}
+#magazine__slider .slick-slide {
+    margin: 0 10px;
+    width: 330px;
+}
+#magazine__slider .magazine__slide {
+    background: center no-repeat;
+    background-size: cover;    
+    float: left;
+    position: relative;
+    height: 516px;
+    border-radius: 20px;
+}
+#magazine__slider .slick-arrow.slick-prev {
+    left: -32px;
+}
+#magazine__slider .slick-arrow.slick-next {
+    right: -32px;
+}
+#magazine__slider .magazine__slide .logo {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#magazine__slider .magazine__slide .magazine__text{
+    padding: 270px 20px 20px;
+    color: #fff;
+}
+.magazine__type {
+    border-radius: 35px;
+    background-color: #fff;
+    color: #a73934;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.magazine__title {
+    margin-top: 22px;
+    line-height: 1.2;
+    font-size: 33px;    
+    font-weight: 700;
+}
+.magazine__description {
+    margin-top: 28px;
 }
 
 /* TV SECTION */

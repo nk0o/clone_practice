@@ -14,17 +14,25 @@ $(document).ready(function(){
         cssEase: 'linear',
         arrows: false
     });
-    $('#magazin--slider').slick({
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
+    $('#magazine__slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
         slidesToShow: 3,
-        arrows: true,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        variableWidth: true
     });
+
+    let $magazineCurrentSlideBG = $('#magazine__slider .slick-active .magazine__slide').eq(1).css('background-image');
+    $('.magazine__contents.blur').css( "background-image", $magazineCurrentSlideBG);
+
+    $('#magazine__slider').on('afterChange', function(event, slick, currentSlide) {
+        const $numOfshowSlide = 3;
+        var $magazineConts = $('#magazine__slider .magazine__slide');
+        let $magazineBg =$magazineConts.eq(currentSlide + $numOfshowSlide + 1).css( "background-image");
+        $('.magazine__contents.blur').css( "background-image", $magazineBg);
+     });
     $('#bg--slider').slick({
         arrows: false,
         infinite: true,
