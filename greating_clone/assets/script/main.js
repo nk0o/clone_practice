@@ -21,18 +21,21 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 3000,
-        variableWidth: true
+        variableWidth: true,
+        dots:true,
     });
 
-    let $magazineCurrentSlideBG = $('#magazine__slider .slick-active .magazine__slide').eq(1).css('background-image');
-    $('.magazine__contents.blur').css( "background-image", $magazineCurrentSlideBG);
+    var $magazineBG = $('#magazine__slider .magazine__slide.center').css("background-image");    
+    $('.magazine__contents .magazin__bg').css("background-image", $magazineBG);
 
-    $('#magazine__slider').on('afterChange', function(event, slick, currentSlide) {
-        const $numOfshowSlide = 3;
-        var $magazineConts = $('#magazine__slider .magazine__slide');
-        let $magazineBg =$magazineConts.eq(currentSlide + $numOfshowSlide + 1).css( "background-image");
-        $('.magazine__contents.blur').css( "background-image", $magazineBg);
-     });
+    $('#magazine__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {            
+        $('#magazine__slider .magazine__slide').removeClass('center');
+        $("#magazine__slider div[data-slick-index='" +nextSlide+ "'] .magazine__slide").addClass('center');
+        let $magazineCurrentBG = $('#magazine__slider .magazine__slide.center').css("background-image");
+        $('.magazine__contents .magazin__bg').fadeTo(0,0.5, function() {
+            $('.magazine__contents .magazin__bg').css("background-image", $magazineCurrentBG);
+        }).fadeTo(500,1);
+    });
     $('#bg--slider').slick({
         arrows: false,
         infinite: true,
@@ -50,6 +53,14 @@ $(document).ready(function(){
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
+    });
+    $('#brand__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 10000,
       });
 
   });
