@@ -36,7 +36,8 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/aos.css"/>
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/script/slick.js"></script>
@@ -268,21 +269,21 @@
             </div>
         </section>
         <!-- BNR-1 SECTION -->
-        <section id="section--bnr_1" class="section">
+        <section id="section--bnr_1" class="section" data-aos="fade-up">
             <div class="bnr__slider">
-                <a href="" class="bnr__slide" style="background-image: url('assets/img/bnr_01.jpg');">
+                <a href="#none" class="bnr__slide" style="background-image: url('assets/img/bnr_01.jpg');">
                     <div class="inner">
                         <div class="bnr__title">그리팅 카톡 채널 추가하고</div>
                         <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
                     </div>
                 </a>
-                <a href="" class="bnr__slide" style="background-image: url('assets/img/bnr_02.jpg');">
+                <a href="#none" class="bnr__slide" style="background-image: url('assets/img/bnr_02.jpg');">
                     <div class="inner">
                         <div class="bnr__title">역대급 혜택! 최대 10만원 쿠폰팩!</div>
                         <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
                     </div>
                 </a>
-                <a href="" class="bnr__slide" style="background-image: url('assets/img/bnr_03.jpg');">
+                <a href="#none" class="bnr__slide" style="background-image: url('assets/img/bnr_03.jpg');">
                     <div class="inner">
                         <div class="bnr__title">신한카드 마이샵 혜택 OPEN</div>
                         <div class="bnr__description">최대 3만원 랜덤 쿠폰 받자!</div>
@@ -292,9 +293,9 @@
         </section>
         <!-- SUBSCRIPTION SECTION -->
         <section id="section--subscription" class="section">
-            <div class="inner">
-                <p class="sec__description">꾸준한 관리, 더이상 어렵지 않아요</p>
-                <h2 class="sec__title">
+            <div class="inner" data-aos="fade-up">
+                <p class="sec__description" data-aos="fade-up">꾸준한 관리, 더이상 어렵지 않아요</p>
+                <h2 class="sec__title" data-aos="fade-up" data-aos-delay="1000">
                     <a href="#none">케어식단 정기구독<i>자세히 보기</i></a>
                 </h2>
                 <ul class="item__list clearfix">
@@ -902,5 +903,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="assets/script/aos.js"></script>
 </body>
 </html>

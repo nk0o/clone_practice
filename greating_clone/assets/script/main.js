@@ -1,4 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+    var secTitle = document.querySelectorAll('.sec__title');
+    secTitle.forEach(element => {
+        element.setAttribute('data-aos','fade-up');
+    });
+});
 $(document).ready(function(){
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000,
+        once:true,
+        anchorPlacement :'top-bottom',
+        mirror: true
+    });
     $('#visual__slider').slick({
         dots: false,
         infinite: true,
@@ -91,4 +104,6 @@ $(document).ready(function(){
             $('.tv__img_wrap').removeClass('animation');
         }
       })
+
+      //$('.section .sec__title').attr('data-aos','fade-up');
   });
