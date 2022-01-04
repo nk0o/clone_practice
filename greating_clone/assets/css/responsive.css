@@ -1,6 +1,6 @@
 @media screen and (max-width : 1100px) {
     .section .inner { width: 100%;padding: 0 20px;}
-    header .main-menu li {margin-right: 15px;}
+    /* header .main-menu li {margin-right: 15px;} */
     #searchInput {width: 150px;}
     .search-group .cart{position: absolute;top: 45px;right: 20px;}
     header .category{width: 150px;transition: none;}
@@ -10,14 +10,14 @@
     #section--subscription .item {width: calc(100% / 2 - 14px);}
     .item:nth-child(3n) { margin-right: 20px; }
     .item:nth-child(2n) { margin-right: 0; } */
+    header .category {position: absolute;top: -30px;font-size: 0;}
 }
-@media screen and (max-width : 768px) {
+@media screen and (max-width :960px) {
     .section .inner {padding: 0 35px;}
     header.section .inner {padding-top: 18px;}
     header .sign-group {display: none;}
     .search-group .cart{top: 25px;}
     #searchFrom {display: none;}
-    header .category {position: absolute;top: -30px;font-size: 0;}
     header .menu-group {display: block;width: 100%;margin-top: 25px;height: 80px;}
     header .menu-group::before {content:''; display: block; width: 100%; height: 1px; background-color: #dbdbdb;box-shadow: 0 0px 1px 0px #dbdbdb;position: absolute;left: 0;}
     header .menu-group::after {content:''; display: block; width: 100%; height: 1px; background-color: #dbdbdb;box-shadow: 0 0px 1px 0px #dbdbdb;position: absolute;left: 0;top: 162px;}
@@ -27,9 +27,12 @@
     header .main-menu li {padding-right: 55px; display: table-cell;}
     header .main-menu li a {font-size: 26px;display: inline-block;}
 
+}
+@media screen and (max-width :768px) {
     #visual__slider .visual__slide {align-items: flex-start;}
     #visual__slider .visual__slide .inner { padding-top: 70px; }
     #visual__slider .visual__slide .visual__description {display: none;}
     #visual__slider .visual__slide .visual__title {margin-top: 0;font-size: 60px;}
     #visual__slider .visual__slide .visual__etc {font-size: 24px;margin-top: 40px;}
+
 }
